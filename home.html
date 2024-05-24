@@ -1,0 +1,142 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>webpage using html and css</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="main">
+<div class="text">
+<i><h3>START-UP</h3></i>
+</div>
+
+  <nav>
+     
+
+   <div class="nav-links">
+    <ul>
+     <li><a href="#">Home</a></li>
+     <li><a href="#">About</a></li>
+     <li><a href="#">Contact</a></li>
+<li><div class="container">
+   <form action="" class="search-bar">
+    <input type="text" placeholder="search anything" name="q">
+    <button type="submit"><img src="images/search1.jpeg"></button>
+   </form>
+</div>
+</li>
+    </ul>
+   </div>
+    <button type="button" onclick="togglebtn()" id="icon"><span></span></button>
+  </nav>
+  <div class="info">
+  <div class="overlay">
+  </div>
+   <div id="circle">
+     <img src="images/main.jpeg" class="idea">
+    <div class="feature one">
+<div class="imaging">
+ <img class="image1" src="images/stack1.jpeg">
+ <img class="image2" src="images/stack2.jpeg">
+ <img class="image3" src="images/stack3.jpeg">
+ <img class="image4" src="images/stack4.jpeg">
+ <img class="image5" src="images/stack5.jpeg">
+ <img class="image6" src="images/stack6.jpeg">
+      </div>
+<div>
+       <h2><a href="stack.html">Stack</a></h2>
+<p>LIFO(Last-In-First-Out)</p>
+<div class="crazy">
+<p>01</p>
+<div class="line1"><span></span></div>
+<p>04</p>
+</div>
+      </div>
+    </div>
+    <div class="feature two">
+    <div class="queueimaging">
+ <img class="image21" src="images/queue1.jpeg">
+ <img class="image22" src="images/queue1.jpeg">
+ <img class="image23" src="images/queue1.jpeg">
+ <img class="image24" src="images/queue1.jpeg">
+ <img class="image25" src="images/queue1.jpeg">
+ <img class="image26" src="images/queue1.jpeg">
+      </div>
+      <div>
+       <h2><a href="#">Queue</a></h2>
+<p>FIFO(First-In-First-Out)</p>
+<div class="crazy">
+<p>02</p>
+<div class="line2"><span></span></div>
+<p>04</p>
+</div>
+      </div>
+    </div>
+    <div class="feature three">
+     <img src="images/online.jpeg">
+      <div>
+       <h2><a href="#">Linked Lists</a></h2>
+<p>Handling Dynamic Data Elements</p>
+<div class="crazy">
+<p>03</p>
+<div class="line3"><span></span></div>
+<p>04</p>
+</div>
+      </div>
+    </div>
+    <div class="feature four">
+     <img src="images/elite.jpeg">
+      <div>
+       <h2><a href="#">Trees And Graphs</a></h2>
+<p>Non-Linear Data Structures</p>
+<div class="crazy">
+<p>04</p>
+<div class="line4"><span></span></div>
+<p>04</p>
+</div>
+      </div>
+    </div>
+   </div>
+  </div>
+  <div class="control">
+   <img src="images/up1.jpeg" id="upbutton">
+    <h3>Select Field</h3>
+   <img src="images/down1.jpeg" id="downbutton">
+ </div>
+ <script>
+  var circle=document.getElementById("circle");
+  var upbutton=document.getElementById("upbutton");
+  var downbutton=document.getElementById("downbutton");
+  var rotateValue=circle.style.transform;
+  var rotatesum;
+   upbutton.onclick=function()
+   {
+    rotatesum=rotateValue+"rotate(-90deg)"; 
+    circle.style.transform=rotatesum;
+    rotateValue=rotatesum;
+   }
+   downbutton.onclick=function()
+   {
+    rotatesum=rotateValue+"rotate(90deg)"; 
+    circle.style.transform=rotatesum;
+    rotateValue=rotatesum;
+   }
+ </script>
+<script>
+var btn=document.getElementById("icon");
+var icon=document.getElementById("icon");
+function togglebtn()
+{
+btn.classList.toggle("active");
+icon.classList.toggle("dark-theme");
+document.body.classList.toggle("dark-theme");
+if(document.body.classList.contains("dark-theme"))
+{
+}
+
+}
+
+</script>
+</body>
+</html>

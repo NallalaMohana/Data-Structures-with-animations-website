@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>
+stack
+</title>
+<style>
+h1
+{
+text-align:center;
+}
+.push
+{
+font-family:fantasy;
+font-size:30;
+margin-top:50px;
+margin:20px;
+}
+.anime {
+  background-color: lightgrey;
+  width: 1100px;
+  padding: 5px;
+  margin: 30px;
+}
+p
+{
+margin:20px;
+}
+#anim {
+  width: 1450px;
+  height: 140px;
+  background: black;
+  border:1px blue;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  from {background-color: FA80F9;}
+  to {background-color:B958CB;}
+ 50% {border: 15px solid lightblue;}
+}
+* {
+  box-sizing: border-box;
+}
+.simple{
+  width: 180px;
+  height: 70px;
+  text-align:center;
+  align-items:center; 
+  background-color: red;
+  position: relative;
+  animation: example 4s;
+visibility:hidden;
+animation-fill-mode:forwards;
+}
+.simple img
+{
+width:120px;
+margin-top:07px;
+align-items:center;
+text-align:center;
+}
+.im2
+{
+width:120px;
+margin-top:07px;
+align-items:center;
+text-align:center;
+animation-delay:2s;
+}
+@keyframes example {
+  0%   {background-color:red;opacity:01; left:300px;visibility:visible; top:200px;}
+  25%  {background-color:yellow;opacity:01; left:300px;visibility:visible; top:00px;}
+  50%  {background-color:blue; opacity:01;left:500px;visibility:visible; top:0px;}
+  /*75%  {background-color:green;opacity:01; left:500px; top:0px;}*/
+  100% {background-color:transparent;opacity:01;visibility:visible; left:500px; top:200px;}
+}
+</style>
+</head>
+<body>
+<h1><b>STACKS</b></h1>
+<div id="anim" class="anime"<p><h3><i>
+<ul><li>A Stack is a linear data structure that follows the LIFO (Last-In-First-Out) principle.<br></li>
+<li> It contains only one pointer top pointer pointing to the topmost element of the stack. Whenever an element is added in the stack, it is added on the top of the stack, and the element can be deleted only from the stack.<br></li>
+<li>In other words, a stack can be defined as a container in which insertion and deletion can be done from the one end known as the top of the stack.</li></i></ul></p>
+</h3>
+</div>
+<div class="push">PUSH</div>
+<p>pushing an element to the stack</p>
+<div class="simple">
+<img class="im1" src="images/plate.jpeg"></img>
+<img class="im2" src="images/plate.jpeg"></img>
+
+</div>
+</body>
+</html>
